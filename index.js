@@ -3,10 +3,10 @@ const pianoKeys = document.querySelectorAll(".piano-keys .key");
   (keysCheckbox = document.querySelector(".keys-checkbox input"));
 
 let allkeys = [],
-  audio = new Audio(`index/a.wav`);
+  audio = new Audio(`a.wav`);
 
 const playTune = (key) => {
-  audio.src = `index/${key}.wav`;
+  audio.src = `${key}.wav`;
   audio.play();
 
   const clickedKey = document.querySelector(`[data-key="${key}"]`);
